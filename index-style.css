@@ -54,6 +54,8 @@ body {
     text-shadow: 4px 4px 0px black;
 }
 
+
+
 #div-phantom-sub-3 {
     z-index: -10;
     margin-top: 200px;
@@ -74,10 +76,18 @@ body {
 }
 .content-sub-3 {
     position: absolute;
-    right: 10px;
+    left: 720px;
     font-size: 20px;
-    width: 300px;
+    width: 500px;
     height: 200px;
+}
+
+#dragon-ball-friends {
+    position: absolute;
+    right: 0px;
+    top: 3300px;
+    width: 700px;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 }
 
 
