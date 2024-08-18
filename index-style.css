@@ -14,9 +14,14 @@ h4 {
     text-shadow: 4px 4px 0px black;
 }
 .container {
-    display: flex;
     border: solid 2px white;
+    display: flex;
     width: 100%;
+    height: max-content;
+}
+.column {
+    border: solid 2px rgb(0, 255, 34);
+    width: 50%;
     height: max-content;
 }
 
@@ -88,138 +93,88 @@ h4 {
     z-index: -10;
 }
 
-/*Posicionamiento de Subtítulos*/
+/*Sección 1: Historia*/
 .subtitle-1 {
     text-align: center;
 }
 #sub-container-img {
     flex-direction: row;
+    border-radius: 15px;
     width: 100%;
     height: max-content;
+}
+.column-container {
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
 }
 
 #container-collage {
     flex-direction: row;
     text-align: center;
     color: black;
-    width: 50%;
+    width: 100%;
     height: max-content;
     padding: 10px 1px 0 1px;
 }
 
 #div-elemet-1 {
     display: inline-block;
-    width: 45%;
+    width: 48%;
     height: 50%;
     background-color: #FF9800;
     border-radius: 8px;
 }
 #div-elemet-2 {
     display: inline-block;
-    width: 45%;
+    width: 48%;
     height: 50%;
     background-color: rgb(35, 35, 255);
     border-radius: 8px;
 }
 #div-elemet-3 {
     background-color: yellow;
-    width: 90%;
+    width: 96%;
     height: 60px;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 10px;
     border-radius: 8px;
 }
 #container-icon-row {
-    width: 40%;
+    margin: 25px 0 0 0;
+    width: 100%;
     height: max-content;
-    border: solid 2px greenyellow;
+    
 }
 .icon-row {
-    width: 40px;
+    cursor: pointer;
+    width: 40%;
+    margin: 30px 0 0 150px;
 }
 
-.subtitle-2 {
-    position: relative;
-    right: 300px;
-    top: 350px;
-    text-align: center;
-}
-.subtitle-3 {
-    position: relative;
-    top: 50px;
-    left: 30px;
-}
-
-
-#div-phantom-sub-3 {
-    z-index: -10;
-    margin-top: 200px;
-    background-color: #FF9800;
-    width: 50%;
-    height: 200px;
-    border-bottom: solid 8px black; 
-    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
-}
-
-
-.content-sub-3 {
-    position: absolute;
-    left: 720px;
-    font-size: 20px;
-    width: 500px;
-    height: 200px;
-}
-
-#dragon-ball-friends {
-    position: absolute;
-    right: 0px;
-    top: 3300px;
-    width: 700px;
-    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
-}
-
-
-
-
-
-
-
-/*Contenedores de filas y columnas*/
-.row {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-}
-.column {
-    flex-direction: row;
-    text-align: center;
-    color: black;
-    background-color: #FF9800;
-    border-radius: 20px;
-    width: 380px;
-    height: 385px;
-    margin: 10px 70px 10px 70px;
-    padding: 15px 0 0 0;
-}
-
-
+/*Sección 2: Personajes*/
 .img2 {
     width: 100%;
+    border-radius: 40px;
     z-index: -5;
 }
+.subtitle-2 {
+    position: relative;
+    top: 330px;
+    left: 70px;
+}
 
-/*Personajes Principales y dinámicas*/
+#column {
+    flex-direction: column;
+}
+
 #div-container-geometryc {
-    z-index: -5;
-    margin-top: 40px;
+    z-index: 20;
     display: flex;
     justify-content: center;
     width: 100%;
     height: 400px;
 }
-
 #div-phantom-2 {
-    z-index: 0;
     background-color: #FF9800;
     color: black;
     width: 400px;
@@ -227,8 +182,6 @@ h4 {
     margin: 50px 50px 0 50px;
     clip-path: polygon(0 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 }
-
-/*Contenedores de iconos*/
 .icon-style {
     z-index: 1;
     position: relative;
@@ -237,6 +190,7 @@ h4 {
     width: 200px;
     height: 200px;
 }
+
 .text-icon {
     z-index: 2;
     text-align: center;
@@ -247,3 +201,61 @@ h4 {
     font-weight: bold;
 }
 
+
+/*Sección 3: Influencia Cultural*/
+.space-container {
+    margin: 100px 0 0 0;
+}
+
+.block-element {
+    border: solid 2px rgb(0, 113, 141);
+    width: 100%;
+    height: 50%;
+}
+
+#div-phantom-sub-3 {
+    z-index: -10;
+    background-color: #FF9800;
+    width: 100%;
+    height: 200px;
+    margin: 70px 0 0 0;
+    padding: 1px 0 0 10px;
+    border-bottom: solid 8px black; 
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.content-sub-3 {
+    font-size: 20px;
+    margin: 100px 0px 60px 10px;
+}
+
+#dragon-ball-friends {
+    width: 100%;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+#icon-section-3 {
+    width: 35%;
+    margin: 60px 0 0 190px;
+}
+
+/*Sección 4: Animación y Producción*/
+#subtitle-4 {
+    text-align: center;
+    
+}
+.img-section-4 {
+    margin: 0 0 0 110px;
+    width: 60%;
+    border-radius: 15px;
+}
+.float-img {
+    margin: 10px 20px 0 0;
+    width: 105px;
+    float: right;
+}
+
+
+
+.content-sub-4 {
+    font-size: 10px;
+}
